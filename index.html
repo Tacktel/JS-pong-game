@@ -95,7 +95,7 @@
        if (y > leftPaddleY && y < leftPaddleY + leftPaddleHeight)
          dx = -dx;
        else if ((x - ballRadius) <= 0) {
-         leftScore++;
+         rightScore++;
          //alert("Game Over");
          x = canvas.width / 2;
          y = canvas.height / 2;
@@ -111,7 +111,7 @@
       if (y > rightPaddleY && y < rightPaddleY + rightPaddleHeight)
         dx = -dx;
       else if (x + ballRadius >= canvas.width) {
-        rightScore++;
+        leftScore++;
         //alert("Game Over");
         x = canvas.width / 2;
         y = canvas.height / 2;
